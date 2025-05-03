@@ -14,7 +14,6 @@ body{
     height: 100%;
     width: 100%;
     font-family: "Poppins";
-    background-color: #3B141C;
 }
 /* ==================HEADER================= */
 .header{
@@ -81,6 +80,7 @@ body{
 .main__herosection{
     min-height: 100vh;
     width: 100%;
+    background-color: #3B141C;
     display: flex;
     justify-content: space-between;
     align-items: center;
