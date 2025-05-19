@@ -1,15 +1,42 @@
 /* ==================RESPONSIVE MEDIA QUERIES================= */
 
-@media screen and (max-width:768px) {
+@media (max-width: 1025px) {
+    html{
+        font-size: 93%;
+    }    
+
+    .nav__items{
+        gap: 0;
+    }
+    .main__title{
+        width: 100%;
+    }
+    .main__text{
+        width: 100%;
+    }
+
+    .about__image{
+        max-width: 60%;
+    }
+    .contact__details{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 769px) {
+    html{
+        font-size: 87.5%;
+    }
     .navbar{
         display: block;
         position: fixed;
-        width: 40%;
+        width: 35%;
         height: 100%;
         background-color: aliceblue;
-        right: -100%;
+        right: 0;
         top: 0;
-        transition: all 0.5s ease;
+        transform: translateX(100%);
+        transition: all .4s ease;
     }
 
     .header__menu{
@@ -20,9 +47,6 @@
         display: block;
     }
 
-    .active{
-        right: 0;   
-    }
     .nav__items{
         display: flex;
         flex-direction: column;
@@ -33,406 +57,132 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
+    .nav__items > li {
+        line-height: 4;
+    }
     .nav__link{
         color: #000;
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 9vh;
     }
 
     .main__title{
         width: 100%;
-        line-height: 5vw;
     }
 
     .main__text{
         width: 100%;
     }
-    .btn{
-        padding: 3vw 4vw;
-        font-size: 1.8rem;
-        border-radius: 6vw;
-    }
-
-    .about__title::after{
-        top: 6vh;
-        width: 6vw;
-        left: 22vw;
-    }
 
     .main__herosection{
         flex-direction: column-reverse;
         text-align: center;
-        height: 80vh;
+        margin-top: 3rem !important; 
+    }
+    .main__rightsection{
+        margin-bottom: 2rem;
     }
 
     .rightsection__image{
-        width: 70%;
-        margin-top: 10vh;
+       width: 70%;
     }
 
-    .about__title{
-        font-size: 2rem;
-    }
-
-    .about__title::after{
-        top: 7vh;
-    }
-
-    .about__text{
-        font-size: 1.4rem;
-        text-align: justify;
-        line-height: 2.7vh;
-    }
-
-    .about__imgcontainer{
-        width: 350px;
+    .aboutsection{
+        flex-direction: column-reverse;
+        margin-bottom: 3rem;
     }
 
     .about__image{
-        height: 100%;
-        width: 100%;
-    }
-
-    .about__icon{
-        font-size: 2.2rem;
-    }
-
-    .menu__title{
-        font-size: 2rem;
-    }
-
-    .menu__title::after{
-        top: 5vh;
-        width: 8vw;
-        left: 46vw;
-    }
-
-    .menu__cards{
-        grid-template-columns: 320px 320px;
-    }
-
-    .menu__image{
-        width: 90%;
-        height: auto;
-        aspect-ratio: 1;
-    }
-
-    .card__title{
-        font-size: 1.8rem;
-    }
-
-    .card__text{
-        font-size: 1.3rem;
-    }
-
-    .testimonials__title{
-        font-size: 2rem;
-    }
-
-    .testimonials__title::after{
-        top: 6vh;
-        width: 10vw;
-        left: 38vw;
-    }
-
-    .swiper-wrapper{
-        padding: 10vh 0;
-    }
-
-    .testimonials__image{
-        width: 75%;
-        height: auto;
-    }
- 
-    .testimonials__name{
-        font-size: 1.7rem;
-    }
-
-    .testimonials__text{
-        width: 100%;
-        font-size: 1.5rem;
-    }
-
-    .gallery__title{
-        font-size: 2rem;
-    }
-
-    .gallery__title::after{
-        top: 5vh;
-        width: 7vw;
-        left: 46.5vw;
+        max-width: 60%;
+        margin-top: 3rem;
     }
 
     .gallery__imagewrapper{
-        gap: 30px;
-    }
-
-    .gallery__image{
-        width: 350px;
-        height: 240px;
-        border-radius: 2vw;
-        aspect-ratio: 1;
-    }
-
-    .contact__title{
-        font-size: 2rem;
-    }
-
-    .contact__title::after{
-        top: 5vh;
-        width: 8vw;
-        left: 46vw;
+        padding: 3rem;
     }
 
     .contact__details{
         flex-direction: column-reverse;
-        padding: 8vw;
     }
 
     .contact__input{
         width: 100%;
-        padding: 1.6vw;
-        font-size: 1.6rem;
-        margin-bottom: 3vw;
     }
 
     .contact__textarea{
         height: 20vh;
         width: 100%;
-        padding: 2vh 1.8vw;
-        font-size: 1.6rem;
     }
 
     .btn--brown{
-        padding: 1.5vw 4vw;
+        padding: .9rem 2rem;
     }
 
     .contact__items{
-        margin-top: 5vw;
-        line-height: 7vh;
-        font-size: 1.6rem;
-    }
-
-    .footer{
-        font-size: 1.4rem;
-    }
-
-    .footer__link{
-        font-size: 1.3rem;
+        margin-top: 50px;
     }
 }
 
-@media screen and (max-width:426px) {
-    
+@media (max-width: 426px) {
+    html{
+        font-size: 81.25%;
+    }
     .navbar{
         width: 50%;
     }
 
-    .header__menu{
-        right: 20px;
-    }
-    
-    .header__logo{
-        font-size: 0.9rem;
-    }
-
-    .menu__icon{
-        font-size: 1.5rem;
-    }
-
-    .close__icon{
-        font-size: 1.3rem;
-        right: 25px;
-        top: 20px;
-    }
-
-    .nav__link{
-        font-size: large;
-        line-height: 10vh;
-    }
-
     .main__herosection{
-        flex-direction: column-reverse;
-        text-align: center;
-        margin-top: 20px;
-        height: 50vh;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .main__leftsection{
+        padding: 0;
     }
 
     .rightsection__image{
-        width: 100%;
-    }
-
-    .main__heading{
-        font-size: 2.5rem;
-    }
-
-    .main__title{
-        font-size: 1.5rem;
-        line-height: 4vh;
-    }
-
-    .main__text{
-        font-size: small;
-    }
-
-    .btn{
-        padding: 2.5vw 4vw; 
-        border-radius: 6vw;
-        font-weight: 550;
-        font-size: large;
-        margin-top: 4vh;
+        max-width: 100%;
     }
     
     .aboutsection{
         flex-direction: column-reverse;
+        margin-bottom: 3rem;
     }
-
-    .about__title::after{
-        top: 7vh;
-        left: 40vw;
-        width: 14vw;
-    }
-
-    .about__text{
-        margin-top: 5vh;
-        line-height: 4vh;
-        margin-bottom: 3vh;
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-    .about__icon{
-        font-size: 1.8rem;
-        margin-right: 10px;
-    }
-
-    .about__imgcontainer{
-        margin-top: 6vh;
-    }
-
-    .menu__title{
-        font-size: 1.5rem;
-    }
-
-    .menu__title::after{
-        top: 5vh;
-        left: 44.5vw;
-        width: 12vw;
-    }
-
     .menu__cards{
-        display: flex;
-        flex-direction: column;
-        margin-top: 5vh;
+        padding: 2rem 1rem;
     }
-
-    .card__text{
-        font-size: medium;
-    }
-
-    .testimonials__slide{
-        margin-top: 10vh;
-        padding: 8vh 0;
-    }
-
-    .testimonials__title{
-        font-size: 1.5rem;
-    }
-
-    .testimonials__title::after{
-        width: 15vw;
-        top: 5vh;
-        left: 36.5vw;
-    }
-
     .testimonials__slide{
         margin: 0;
         padding: 0;
     }
 
-    .testimonials__name{
-        font-size: x-large;
-    }
-
     .testimonials__text{
         width: 100%;
-        font-size: medium;
     }
-
-    .gallery__title{
-        font-size: 1.5rem;
-    }
-
-    .gallery__title::after{
-        top: 5vh;
-        left: 45vw;
-        width: 10vw;
-    }
-
     .gallery__imagewrapper{
-        flex-direction: column;
-        gap: 5vh;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 3rem;
     }
 
-    .gallery__image{
-        width: 90%;
-        border-radius: 2vw;
-    }
-
-    .gallery__image:hover{
-        transform: none;
-    }
-
-    .contact__title{
-        font-size: 1.5rem;
-    }
-
-    .contact__title::after{
-        top: 5vh;
-        width: 14vw;
-        left: 44vw;
-    }
-
-    .contact__input{
-        padding: 3vw 1.3vw;
-        margin-bottom: 3vh;
-        font-size: medium;
-    }
-
-    .contact__textarea{
-        font-size: medium;
-        padding: 2.5vh 1.6vw;
-    }
-
-    .btn--brown{
-        margin-top: 5vh;
-        padding: 1.3vh 5vw;
-        border-radius: 8vw;
-    }
     .contact__details{
-        margin-top: 5vh;
+        padding: 4rem 2rem;
     }
-
-    .contact__details li{
-        margin-top: 4vh;
-        line-height: 0;
-        padding: 1vh 0;
-        white-space: nowrap;
-        font-size: 0.9rem;
+    .contact__input::placeholder{
+        left: 3%;
+    }
+    .contact__textarea::placeholder{
+        left: 3%;
+        top: 5%;
     }
 
     .footer{
         display: block;
         height: 15vh;
-        font-size: 0.9rem;
         text-align: center;
-        padding: 4vw 0;
+        padding: 2rem 0;
     }
 
     .footer__social-icons{
-        width: 90%;
-        text-align: center;
+        width: 75%;
     }
 
     .footer__text{
@@ -443,10 +193,4 @@
         display: inline-block;
     }
     
-}
-
-@media screen and (max-width: 321px) {
-    .contact__details li{
-        font-size: 0.7rem;
-    }
 }
