@@ -27,7 +27,7 @@ const swiper = new Swiper('.testimonials__swiper', {
     }
   });
 
-/* ==================GSAP================= */
+// GSAP
 function PageOneAnim (){
 
 

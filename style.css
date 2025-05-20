@@ -414,11 +414,12 @@ input[type="checkbox"]{
 
 .contact__details{
     text-align: start;
-    padding: 5rem;
-    display: flex;
-    justify-content: space-between;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .contact__items{
+    white-space: nowrap;
     font-size: clamp(1rem, 1vw + .1rem, 2rem);
     list-style: none;
     line-height: 3;
@@ -456,6 +457,7 @@ input[type="checkbox"]{
     outline: none;
     position: relative;
     transition: all .3s ease;
+    overflow: auto;
 }
 .contact__input:focus,
 .contact__textarea:focus{
